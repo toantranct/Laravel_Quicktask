@@ -30,8 +30,8 @@ return new class extends Migration
      */
     public function down()
     {
-         Schema::table('users', function($table) { 
-            $table->string('name');          
+        Schema::table('users', function($table) { 
+            $table->string('name');
             $table->dropColumn('first_name');
             $table->dropColumn('last_name');
             $table->dropColumn('is_admin');

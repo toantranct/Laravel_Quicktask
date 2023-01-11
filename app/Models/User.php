@@ -42,9 +42,6 @@ class User extends Authenticatable
         'is_active' => 'boolean',
         'is_admin' => 'boolean',
     ];
-
-    public function task() {
-        return $this->hasMany(Task::class);
-    }
 }
+
 
